@@ -1,8 +1,14 @@
 {
+  "framework": "vite",
   "buildCommand": "pnpm build",
   "outputDirectory": "dist/public",
-  "framework": "other",
   "env": {
     "NODE_ENV": "production"
+  },
+  "functions": {
+    "dist/index.js": {
+      "memory": 1024,
+      "maxDuration": 60
+    }
   }
 }
